@@ -1,8 +1,8 @@
-name:                test-hrr
+name:                hrr-stack-template
 version:             0.1.0.0
-synopsis:            A test project to HRR
+synopsis:            A template project to HRR
 description:         Please see README.md
-homepage:            http://github.com/githubuser/test-hrr#readme
+homepage:            http://github.com/cosmo0920/hrr-stack-template#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Hiroshi Hatake
@@ -16,9 +16,6 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
-                       Account
-                       DataSource
-                       Example
 
   build-depends:       base                  >= 4.7   && < 5
                      , time                  >= 1.5   && < 1.6
@@ -36,23 +33,23 @@ library
                      , HDBC-sqlite3          >= 2.3.3 && < 2.4
   default-language:    Haskell2010
 
-executable test-hrr-exe
+executable hrr-stack-template.exe
   hs-source-dirs:      app
   main-is:             Main.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
-                     , test-hrr
+                     , hrr-stack-template
   default-language:    Haskell2010
 
-test-suite test-hrr-test
+test-suite hrr-stack-template-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs
   build-depends:       base
-                     , test-hrr
+                     , hrr-stack-template
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
 
 source-repository head
   type:     git
-  location: https://github.com/cosmo0920/test-hrr
+  location: https://github.com/cosmo0920/hrr-stack-template
