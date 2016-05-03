@@ -5,14 +5,16 @@ packages:
 - hdbc-mysql/
 
 extra-deps:
-  - relational-record-0.1.2.0
+  - relational-record-0.1.4.0
   - relational-schemas-0.1.2.2
   - sql-words-0.1.3.1
   - HDBC-session-0.1.0.0
   - names-th-0.2.0.1
   - persistable-record-0.4.0.0
+  - persistable-types-HDBC-pg-0.0.1.3
   - relational-query-0.8.1.0
   - relational-query-HDBC-0.6.0.0
+  - text-postgresql-0.0.2.0
   - HDBC-2.4.0.1
   - HDBC-postgresql-2.3.2.3
   - HDBC-sqlite3-2.3.3.1
