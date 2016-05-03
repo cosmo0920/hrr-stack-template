@@ -3,7 +3,7 @@ HRR stack template project
 
 ## Prepare
 
-* Stack
+* [Stack](http://docs.haskellstack.org/en/stable/README/)
 
 ## Try it
 
